@@ -7,7 +7,7 @@ var testdir = require('path').join(__dirname, 'files');
 var nodir = require('path').join(__dirname, 'hello-world');
 function noop() {}
 
-describe('folder-stat', function() {
+describe('folder-lstat', function() {
 	it('should fail when arguments are missing', function() {
 		(function() { stat(); }).should.throw();
 		(function() { stat(testdir); }).should.throw();
