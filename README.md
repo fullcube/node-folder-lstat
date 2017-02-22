@@ -1,7 +1,9 @@
-node-folder-stat [![Build Status](https://travis-ci.org/JoshTheGeek/node-folder-stat.svg?branch=master)](https://travis-ci.org/JoshTheGeek/node-folder-stat)
+node-folder-lstat [![Build Status](https://travis-ci.org/fullcube/node-folder-lstat.svg?branch=master)](https://travis-ci.org/fullcube/node-folder-lstat)
 ================
 
-Run `fs.stat` on every file in a directory.
+> Friendly fork of [folder-stat](https://www.npmjs.com/package/folder-stat) that adds support for symlinks.
+
+Run `fs.lstat` on every file in a directory.
 
 This returns an array of filenames and an array of stats with correlating indexes.
 
@@ -9,7 +11,7 @@ This is based on code from [`serve-index`](https://github.com/expressjs/serve-in
 
 ## Example
 ```js
-var stat = require('folder-stat');
+var stat = require('folder-lstat');
 stat('/bin', function(err, stats, files) {
 	console.log(stats);
 	console.log(files);
